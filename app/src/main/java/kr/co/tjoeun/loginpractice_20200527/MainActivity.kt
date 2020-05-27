@@ -1,5 +1,6 @@
 package kr.co.tjoeun.loginpractice_20200527
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,6 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        signUpBtn.setOnClickListener {
+
+            val myIntent = Intent(this, SignUpActivity::class.java)
+            startActivity(myIntent)
+
+        }
 
         loginBtn.setOnClickListener {
             val inputEmail = emailEdt.text.toString()
