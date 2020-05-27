@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "버튼 클릭 됨", Toast.LENGTH_SHORT).show()
 
+            val inputContent = contentEdt.text.toString()
+
+            eventBtn.text = inputContent
+
         }
 
     }
