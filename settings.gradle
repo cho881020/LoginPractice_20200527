@@ -1,0 +1,2 @@
+rootProject.name='LoginPractice_20200527'
+include ':app'
